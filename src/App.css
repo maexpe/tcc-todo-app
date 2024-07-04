@@ -1,0 +1,130 @@
+body {
+  background-color: #66922c;
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+main {
+  max-width: 70%;
+  margin: 20px auto;
+}
+
+h2,
+h5 {
+  text-align: center;
+}
+
+:focus {
+  outline: none;
+}
+
+::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+form {
+  border: 2px solid #354d17;
+  border-radius: 15px;
+  padding: 8px;
+  display: flex;
+}
+
+form input[type="text"] {
+  background: none;
+  color: white;
+  border: 0;
+  padding: 3px 8px;
+  font-size: 16px;
+  display: block;
+  width: 100%;
+}
+
+form button {
+  background-color: #b6fb61;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+div.task {
+  background-color: #354d17;
+  border-radius: 12px;
+  padding: 8px 11px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  transition: opacity 0.3s linear;
+}
+
+div.task svg {
+  height: 26px;
+  margin-right: 8px;
+  fill: #b6fb61;
+}
+
+div.task.done {
+  opacity: 0.5;
+}
+
+div.task-name,
+div.task form {
+  flex-grow: 1;
+}
+
+div.task span {
+  position: relative;
+}
+
+div.task span:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 1px;
+  background-color: white;
+  position: absolute;
+  top: 12px;
+  transition: width 0.1s linear;
+}
+
+div.task.done span:before {
+  width: 100%;
+}
+
+div.checkbox {
+  display: flex;
+  align-items: center;
+}
+
+button.add {
+  padding: 5px 6px 3px 6px;
+  border-radius: 7px;
+  width: 25px;
+}
+
+button.trash {
+  background: none;
+  border: none;
+  display: flex;
+  cursor: pointer;
+}
+
+button.trash svg {
+  fill: #aaa;
+  height: 16px;
+}
+
+div.task form {
+  padding: 0;
+}
+
+div.task input {
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
